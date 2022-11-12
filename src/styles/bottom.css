@@ -1,0 +1,22 @@
+
+ .bottom{
+  background-color: #E74639;
+  height: 30vh;
+  padding-block:4vw ;
+ }
+.bottomm-layer{
+  display: grid;
+  grid-template-columns: repeat(1fr);
+}
+.bottom-main{
+  padding-block: 1rem;
+  
+}
+ .bottom_title_a{
+  color:#F2E6E6;
+  font-size: 2vw; 
+  padding-inline:2vw ;
+  padding-top: 2vw;
+  font-weight: 500;
+  
+}

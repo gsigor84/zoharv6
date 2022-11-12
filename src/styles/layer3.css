@@ -1,0 +1,31 @@
+.layer3 {
+  padding-block: 10vh;
+  background-color: #34A853;
+  }
+
+  .main-layer{
+    display: grid;
+    gap:1.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    padding-inline:2vw ;
+  }
+
+  .main{
+    line-height: 2.5vw;
+    background-color: #5CDE60;
+    height: 20vh;
+    color:white;
+    font-size: 2.5vw; 
+    padding: 1rem; 
+    
+  }
+  .main-span-col{
+    background-color: #34A853;
+   padding-top:30px;
+    grid-column: span 2;
+    font-size: 8vw;
+    height: 15vh;
+    color:white;
+    font-family: 'Source Sans 3', sans-serif;
+   
+  }

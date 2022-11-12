@@ -1,0 +1,50 @@
+.layer2 {
+ padding-block: 6vh;
+ }
+ .l2_title{
+  color:#696969;
+  font-size: 2vw; 
+  padding-inline:2vw ;
+  padding-top: 2vw;
+  font-weight: 500;
+  
+}
+.l2_title2_b2{
+  font-weight: 300;
+  
+}
+.uk{
+  line-height: 2vw;
+  line-height: 1.5rem;
+}
+.uk-grid{
+  display: grid;
+  gap:1.5rem;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+  padding:2% ;
+}
+.l2_title2{
+  
+  font-weight: 300;
+}
+
+.in-t-grind{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  gap:1rem;
+}
+.in-t-grind-c{
+padding-inline: 1rem;
+}
+.inner_title{
+  padding: 0.5rem;
+}
+.l3_title_c{
+  color:#696969;
+  font-size: 2vw; 
+  
+  padding-top: 2vw;
+  font-weight: 500;
+  
+}

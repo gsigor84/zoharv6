@@ -1,13 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;500&display=swap');
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ margin: 0;
+ font-family: 'Open Sans', sans-serif;
+ color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.us-grid{
+  display: grid;
+  grid-template-columns: 1fr ;
+}
+
+.us{
+ padding-inline:2% ;
+ 
+}
+.us2{
+ 
+ padding-inline:1rem;
+ line-height: 1.5rem;
+ }
+ .titulo-con{
+  
+  font-size: 0.8vw;
+  font-weight: 400;
+  font-family: 'Source Sans 3', sans-serif;
+}
+.grid-col-span-3{
+  grid-column: span 3;
+  padding:4rem ;
+  font-size: 10vw;
+  
+  letter-spacing: 6vw;
+  font-family: 'Source Sans 3', sans-serif;
+}
+.grid-col-span-2{
+  grid-column: span 2;
+  grid-row: 2;
+  font-size: 16vw;
+  padding-block:2rem ;
+  width: 95%;
+  line-height: 1.5rem;
+  
+
+}
+.testimonial-grid{
+  display: grid;
+  gap:1.5rem;
+  grid-template-columns: repeat(4, 1fr) ;
+  padding-block:2rem ;
+  margin-inline: auto;
+
+}
+.testimonial{
+  line-height: 2vw;
+}
+
+.col-mediun{
+  width: 400px;
+}
+.testimonial:last-child{
+  grid-column: 4;
+  grid-row-start: 1;
+  grid-row-end:3;
+  padding:1.8rem ;
+}
+
+
+.banner{
+  background-color: #4285F4;
+  padding: 2vw;
+  height: 80%;
+  
+}
+.banner_in{
+font-family: 'Open Sans', sans-serif;
+font-size: 10vw;
+}
+.sub-tweet{
+ 
+  font-size: 1vw;
+  font-weight: 400;
+  padding-inline: 2%;
+  line-height: 1.8rem;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.sub{
+  color:#E2EFF3;
+  font-size: 1vw;
+  font-weight: 500;
+  padding: 0.4%;
+  line-height: 1.8rem;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+
+.top_title{
+  font-weight: 300;
+  font-size: 2vw;
+  color:#E2EFF3;
+
+}
+
+.top_title2{
+  font-weight: 300;
+  text-shadow: 1px 1px 0 #000;
+ color:white;
+
+}
+
+.layer_1 {
+  display: grid;
+  grid-template-columns: 28vw 28vw 28vw  ;
+  grid-template-rows: 30% 1vh;
+  margin: 2vh;
+  padding-inline:2vw ;
+  color:#696969;
+  
+  height: 30%;
+}
+
+.a {
+ 
+  font-family: 'Source Sans 3', sans-serif;
+}
+.b {
+  width: 300px;
+  height: 100px;
+  font-size: 14%;
+  padding-inline: 4%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+.layer_2 {  
+  height: 30%;
+  padding-inline:4vw ;
+  padding-block: 2vh;
+  display: grid;  
+  grid-gap: 2px;  
+  grid-template-columns: repeat(200px, 100px);
+  grid-template-rows: repeat(6, 40px);  
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 300;
+  font-size: 1.5vw;  
+}
+a { 
+  text-decoration: none;
+  color:#696969;
+}
+
+.l3_title{
+  color:#696969;
+  font-size: 0.4vw; 
+  
+  padding-top: 2vw;
+  font-weight: 500;
+  
+}
+.l2_title_b{
+  color:#E2EFF3;
+  font-size: 2vw; 
+  padding-inline:2vw ;
+  padding-top: 2vw;
+  font-weight: 500;
+  
+}
+.l2_title_c{
+  color:#E2EFF3;
+  font-size: 2vw; 
+  
+  padding-top: 2vw;
+  font-weight: 500;
+  
+}
+
+
+.l3_title{
+  color:#696969;
+  font-size: 4vw; 
+  padding-inline:4vw ;
+  padding-top: 4%;
+  font-weight: 500;
+  
+}
+
+.tech-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  
+}
+.bit-back{
+  background-size:100% auto;
+  width: 40vw;
+  height: 30vh;
+  max-height: 30vh;
+  background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+padding-inline:2vw ;
+
+}
+.sub-coin{
+  color:white;
+  font-size: 2vw;
+  font-weight: 500;
+  padding: 4%;
+  line-height: 3rem;
+  text-shadow: 1px 1px black;
+  font-family: 'Source Sans 3', sans-serif;
+}
+@media only screen and (max-width: 600px) {
+
+  .layer_1 {
+    display: block;
+    margin-top: 15vh;
+  }
+  .a{
+    margin-block: 4%;
+  }
+  .b{
+    margin-block: 4%;
+  }
+
 }
