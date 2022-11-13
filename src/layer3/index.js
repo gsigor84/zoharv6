@@ -17,9 +17,9 @@ function Index() {
   }
   
 
-  fetchMyAPI()
+  
   Promise.all(ben)
-  .then(() => setLoaded(true))
+  fetchMyAPI().then(() => setLoaded(true))
   .catch(err => console.log("Failed to load images", err))
 
 },[])
@@ -30,7 +30,7 @@ function Index() {
 (
   <div className='main-layer'>
   <div className='main main-span-col'>Benzinga</div>
-{ben.map((bens,i) =>(  
+{ben.slice(-6).map((bens,i) =>(  
   <a  href={bens.attributes.ben.link}>
 <div className='main'>
 {

@@ -1,7 +1,8 @@
 import '../styles/capa.css'
 import {API_URL} from '../config/index'
 import { useEffect, useState} from 'react';
-
+import Lottie from 'react-lottie';
+import animationData from '../load.json'
 function Index() {
 
   const [un1,setUn1]=useState([])
@@ -14,13 +15,21 @@ function Index() {
     let res2 = await fetch(url2)
     res2 = await res2.json()
     setUn1(res2.data)
+    
   }
-  fetchMyAPI()
+  
   Promise.all(un1)
-  .then(() => setLoaded(true))
+  
+  fetchMyAPI().then(() =>setLoaded(true))
   .catch(err => console.log("Failed to load images", err))
 }, [])
 
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  renderer: 'svg'
+}
 
 return(
 <div className='capa'>
@@ -43,7 +52,11 @@ return(
 ) :
 (
 
-   <h1>Loading</h1>
+  <Lottie
+                options={defaultOptions}
+                height={500}
+                width={500}
+               />
 )}
 
 

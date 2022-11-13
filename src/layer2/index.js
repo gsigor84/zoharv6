@@ -24,9 +24,9 @@ function Index() {
     setInTech(res3.data)
   }
 
-  fetchMyAPI()
+  
     Promise.all(inTrends,inTech,)
-    .then(() => setLoaded(true))
+    fetchMyAPI().then(() => setLoaded(true))
     .catch(err => console.log("Failed to load images", err))
     
 
@@ -73,7 +73,7 @@ inTrend.attributes.in1.title.length >70 ?
   <div className='tech-main tech-span-col2'>
 India<span className='shadow'>Tehc</span>
   </div>
-{inTech.slice(-8).map((inTechs,i) =>(  
+{inTech.slice(-5).map((inTechs,i) =>(  
   <> 
   <div className='tech-main2'>
 <a className='in-a2' href={inTechs.attributes.in3.link}> 

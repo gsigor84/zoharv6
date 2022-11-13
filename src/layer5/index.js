@@ -16,9 +16,9 @@ function Index() {
         console.log(res.data)
     
   }
-  fetchMyAPI()
+  
   Promise.all(bit)
-  .then(() => setLoaded(true))
+  fetchMyAPI().then(() => setLoaded(true))
   .catch(err => console.log("Failed to load images", err))
 
 },[])
@@ -33,7 +33,7 @@ return(
   <div className='crypto-span-col'>
     Crypto
   </div>
-  {bit.slice(-9).map((bitcoin,i) =>( 
+  {bit.slice(-7).map((bitcoin,i) =>( 
     <>
     
 

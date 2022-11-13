@@ -16,10 +16,10 @@ function Index() {
       
     
   }
-  fetchMyAPI()
+  
 
   Promise.all(ukTrends)
-  .then(() => setLoaded(true))
+  fetchMyAPI().then(() => setLoaded(true))
   .catch(err => console.log("Failed to load images", err))
 
 },[])
@@ -33,7 +33,7 @@ function Index() {
     <div className='tech-main tech-span-col'>
 Uk<span className='shadow'>Trend</span>
     </div>
-  {ukTrends.map((ukTrend,i) =>(  
+  {ukTrends.slice(-8).map((ukTrend,i) =>(  
     <> 
 
  <div className='trend-back'>
