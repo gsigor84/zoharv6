@@ -41,3 +41,26 @@
     line-height: 2.5vw;
     color:white;
   }
+  @media only screen and (max-width: 600px) {
+
+    .layer5{
+      padding: 2vh;
+      background-color: #F2EFE0;
+      
+      }
+      .crypto-layer{
+        display: grid;
+        padding-block: 1rem;
+        grid-template-columns:   1fr 1fr 1fr  ;
+       gap:2rem;
+        
+      }
+      .crypto-main{
+        height: 10vh;
+        line-height: 2vw;
+        padding:1rem ;
+        background-color:#FFD527;
+        color:#FBBC04;
+        font-family: 'Source Sans 3', sans-serif;
+      }
+  }
