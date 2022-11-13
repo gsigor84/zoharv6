@@ -33,17 +33,10 @@ return(
   <div className='crypto-span-col'>
     Crypto
   </div>
-  {bit.map((bitcoin,i) =>( 
+  {bit.slice(-9).map((bitcoin,i) =>( 
     <>
     
-     <div className='crypto-back'>
-     <a className='crypto-a' href={bitcoin.attributes.bit1.link}> 
- <img 
-      src={bitcoin.attributes.bit1.img}
-      alt="new"
-      />
-</a>
- </div>
+
 <div className='crypto-main'>
 <a className='crypto-a' href={bitcoin.attributes.bit1.link}> 
  

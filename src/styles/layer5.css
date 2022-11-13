@@ -1,49 +1,44 @@
 .layer5{
   padding-block: 8vh;
   padding-inline: 4rem;
-  background-color: #FBBC04;
+  background-color: #434343;
   
   }
 
   .crypto-layer{
     display: grid;
     padding-block: 2rem;
-    grid-template-columns:  0.5fr 1fr  0.5fr 1fr ;
+    grid-template-columns:   1fr 1fr  ;
    gap:2rem;
     
   }
 
   .crypto-main{
-    
+   
     line-height: 2vw;
-    width: 20vw;
+    
     padding-block:2rem ;
-    height: 20vh;
+    
     color:#FBBC04;
     font-family: 'Source Sans 3', sans-serif;
   }
 
   .crypto-span-col{
 
-    grid-column: span 4;
+ grid-column: 1;   
     text-align: left;
     font-weight: 500;
     font-size: 6vw;
-    color: #F2EFE0 ;
+    color: #696969;
     font-family: 'Source Sans 3', sans-serif;
-    background-color: #FBBC04;
+    
   }
 
   .crypto-a{
     color: white ;
     font-weight: 500;
-    font-size: 1.5vw; 
+    font-size: 2vw; 
     font-family: 'Open Sans', sans-serif;
     line-height: 2.5vw;
-  }
-  .crypto-back{
-    width: 20vw;
-    height: 20vh;
-    display: flex;
-  justify-content: center;
+    color:white;
   }
