@@ -3,6 +3,7 @@ import {API_URL} from '../config/index'
 import { useEffect, useState} from 'react';
 import Lottie from 'react-lottie';
 import animationData from '../load.json'
+
 function Index() {
 
   const [un1,setUn1]=useState([])
@@ -37,7 +38,7 @@ return(
 (
   <div className='capa-layer'>
 <div className='capa capa-span-col'>Trends</div>
-{un1.slice(-6).map((un1,i) =>(
+{un1.slice(-7).map((un1,i) =>(
   <a href={un1.attributes.un1.link} >
   <div className='capa-main'>
         {

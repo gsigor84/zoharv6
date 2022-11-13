@@ -14,11 +14,10 @@
   }
 
   .crypto-main{
-   
+    height: 20vh;
     line-height: 2vw;
-    
-    padding-block:2rem ;
-    
+    padding:1rem ;
+    background-color:#FFD527;
     color:#FBBC04;
     font-family: 'Source Sans 3', sans-serif;
   }
@@ -37,8 +36,8 @@
   .crypto-a{
     
     font-weight: 500;
-    font-size: 1.5vw; 
+    font-size:1.8vw; 
     font-family: 'Open Sans', sans-serif;
     line-height: 2.5vw;
-    color:#FBBC04;
+    color:white;
   }

@@ -6,9 +6,7 @@
 
   .tech-layer{
     display: grid;
-    
     grid-template-columns:  0.2fr 1fr  0.2fr 1fr 0.2fr 1fr;
-   
     padding-inline:2vw ;
   }
 
@@ -81,4 +79,52 @@
     color:white;
     font-family: 'Source Sans 3', sans-serif;
     
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .layer2 {
+      padding: 2vh;
+      background-color: #434343;
+      
+      }
+      .tech-layer{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns:  0.5fr 1fr 0.5fr 1fr ;
+      }
+
+      .tech-main{
+        line-height: 1.5vw;
+        width: 14vw;
+        color:white;
+        font-family: 'Source Sans 3', sans-serif;
+        padding: 0;
+      }
+      .trend-back{
+        justify-content: right;
+        height:  10vh;;
+        display: flex;
+        width: 20vw;
+        padding: 0;
+      }
+      .tech-layer2{
+        display: grid;
+        gap:1rem;
+        grid-template-columns:  1fr 1fr 1fr  ;
+       padding-top: 2rem;
+        padding-inline:2vw ;
+      }
+      .tech-main2{
+        background-color: #b5b5b5 ;
+        line-height: 2.5vw;
+        height: 10vh;
+        gap: 2rem;
+        padding: 0.5rem; 
+        color:white;
+        font-family: 'Source Sans 3', sans-serif;
+        
+      }
+    
+
   }

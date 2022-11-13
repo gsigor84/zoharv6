@@ -1,6 +1,8 @@
 import '../styles/layer2.css'
 import {API_URL} from '../config/index'
 import { useEffect, useState} from 'react';
+import Lottie from 'react-lottie';
+import animationData from '../load.json'
 
 function Index() {
 
@@ -32,6 +34,12 @@ function Index() {
 
 },[])
 
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  renderer: 'svg'
+}
 
   return(
     <div className='layer2'>
@@ -93,7 +101,11 @@ inTechs.attributes.in3.title.length >80 ?
 </> 
 ):
 (
-  <h1>Loading</h1>
+  <Lottie
+  options={defaultOptions}
+  height={500}
+  width={500}
+ />
  
 )
 }

@@ -1,6 +1,8 @@
 import '../styles/layer3.css'
 import {API_URL} from '../config/index'
 import { useEffect, useState} from 'react';
+import Lottie from 'react-lottie';
+import animationData from '../load.json'
 
 function Index() {
   
@@ -24,13 +26,20 @@ function Index() {
 
 },[])
 
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  renderer: 'svg'
+}
+
   return(
     <div className="layer3">
 {Loaded ? 
 (
   <div className='main-layer'>
-  <div className='main main-span-col'>Benzinga</div>
-{ben.slice(-6).map((bens,i) =>(  
+  <div className='main-span-col'>Benzinga</div>
+{ben.slice(-7).map((bens,i) =>(  
   <a  href={bens.attributes.ben.link}>
 <div className='main'>
 {
@@ -48,7 +57,11 @@ function Index() {
 )
 :
 (
-  <h1>Loading</h1>
+  <Lottie
+                options={defaultOptions}
+                height={500}
+                width={500}
+               />
 )
 }
 

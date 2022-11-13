@@ -212,17 +212,3 @@ padding-inline:2vw ;
   text-shadow: 1px 1px black;
   font-family: 'Source Sans 3', sans-serif;
 }
-@media only screen and (max-width: 600px) {
-
-  .layer_1 {
-    display: block;
-    margin-top: 15vh;
-  }
-  .a{
-    margin-block: 4%;
-  }
-  .b{
-    margin-block: 4%;
-  }
-
-}

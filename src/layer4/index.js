@@ -1,6 +1,8 @@
 import '../styles/layer4.css'
 import {API_URL} from '../config/index'
 import { useEffect, useState} from 'react';
+import Lottie from 'react-lottie';
+import animationData from '../load.json'
 
 function Index() {
   const [Loaded, setLoaded] = useState(false)
@@ -23,6 +25,14 @@ function Index() {
   .catch(err => console.log("Failed to load images", err))
 
 },[])
+
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  renderer: 'svg'
+}
+
 
   return(
 <div className='layer4'>
@@ -59,7 +69,11 @@ Uk<span className='shadow'>Trend</span>
 )
 :
 (
-<h1>Loading</h1>
+  <Lottie
+                options={defaultOptions}
+                height={500}
+                width={500}
+               />
 )
 }
 

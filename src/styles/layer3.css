@@ -16,16 +16,47 @@
     height: 20vh;
     color:white;
     font-size: 2.5vw; 
-    padding: 1rem; 
-    
+    padding: 1rem;  
   }
   .main-span-col{
     background-color: #34A853;
    padding-top:30px;
-    grid-column: span 2;
-    font-size: 8vw;
+    font-size: 6vw;
     height: 15vh;
     color:white;
     font-family: 'Source Sans 3', sans-serif;
    
+  }
+
+  @media only screen and (max-width: 600px) {
+    .layer3 {
+      padding: 2vh;
+      background-color: #34A853;
+      }
+      .main-layer{
+        display: grid;
+        gap:1rem;
+        grid-template-columns: 1fr 1fr 1fr ;
+        padding-inline:2vw ;
+      }
+
+      .main{
+        line-height: 2.5vw;
+        background-color: #5CDE60;
+        height: 10vh;
+        color:white;
+        font-size: 2.5vw; 
+        padding: 0.5rem;
+      }
+      .main-span-col{
+        background-color: #34A853;
+       padding-top:30px;
+        font-size: 6vw;
+        height: 10vh;
+        
+        color:white;
+        font-family: 'Source Sans 3', sans-serif;
+    
+      }
+
   }

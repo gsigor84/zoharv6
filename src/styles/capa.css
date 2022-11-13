@@ -14,8 +14,8 @@
 .capa-span-col{
   background-color: #4285F4;
  padding-top:10px;
-  grid-column: span 2;
-  font-size: 12vw;
+  
+  font-size: 8vw;
   height: 4vh;
   color:white;
   font-family: 'Source Sans 3', sans-serif;
@@ -30,4 +30,40 @@
   font-size: 2.5vw; 
   padding: 1rem; 
   
+}
+@media only screen and (max-width: 600px) {
+
+  .capa{
+    padding-block: 1vh;
+    background-color: #4285F4;
+    
+  }
+
+  .capa-layer{
+  display: grid;
+  gap:1.5rem;
+  grid-template-columns: 1fr 1fr ;
+  
+}
+.capa-span-col{
+  background-color: #4285F4;
+ padding-top:10px;
+  font-size: 8vw;
+  height: 4vh;
+  color:white;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.capa-main{
+  line-height: 2.5vw;
+  background-color: #57CBFF;
+  height: 4vh;
+  color:white;
+  font-size: 2.5vw; 
+  padding: 1rem; 
+  
+}
+
+
+
 }
