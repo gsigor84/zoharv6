@@ -3,7 +3,7 @@ import {API_URL} from '../config/index'
 import { useEffect, useState} from 'react';
 
 function Index() {
-
+  const [Loaded, setLoaded] = useState(false)
   const [ukTrends,setUkTrends]=useState([])
 
   const url = `${API_URL}/api/uktrends?populate=%2A`
@@ -17,11 +17,18 @@ function Index() {
     
   }
   fetchMyAPI()
+
+  Promise.all(ukTrends)
+  .then(() => setLoaded(true))
+  .catch(err => console.log("Failed to load images", err))
+
 },[])
 
   return(
-<div className='uk-tech'>
+<div className='layer4'>
 
+{Loaded ? 
+(
 <div className='tech-layer'>
     <div className='tech-main tech-span-col'>
 Uk<span className='shadow'>Trend</span>
@@ -45,14 +52,18 @@ Uk<span className='shadow'>Trend</span>
   }
 </a>
 </div>
-
-
-
 </>
 ))}
   </div>
-</div>
 
+)
+:
+(
+<h1>Loading</h1>
+)
+}
+
+</div>
   )
 }
 

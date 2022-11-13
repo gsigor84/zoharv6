@@ -3,7 +3,7 @@ import {API_URL} from '../config/index'
 import { useEffect, useState} from 'react';
 
 function Index() {
-
+  const [Loaded, setLoaded] = useState(false)
   const [bit,setBit]=useState([])
 
   const url = `${API_URL}/api/bitcoins?populate=%2A`
@@ -17,10 +17,18 @@ function Index() {
     
   }
   fetchMyAPI()
+  Promise.all(bit)
+  .then(() => setLoaded(true))
+  .catch(err => console.log("Failed to load images", err))
+
 },[])
 
 return(
 <div className='layer5'>
+
+{Loaded ? 
+(
+
 <div className='crypto-layer'>
   <div className='crypto-span-col'>
     Crypto
@@ -51,6 +59,10 @@ return(
    
 
 </div>
+):(
+  <h1>Loading</h1>
+)
+}
 </div>
 
 )

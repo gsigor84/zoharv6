@@ -5,6 +5,7 @@ import { useEffect, useState} from 'react';
 function Index() {
   
   const [ben,setBen]=useState([])
+  const [Loaded, setLoaded] = useState(false)
 
   const url = `${API_URL}/api/benzinas?populate=%2A`
 
@@ -14,12 +15,20 @@ function Index() {
         res = await res.json()
         setBen(res.data)
   }
+  
+
   fetchMyAPI()
+  Promise.all(ben)
+  .then(() => setLoaded(true))
+  .catch(err => console.log("Failed to load images", err))
+
 },[])
 
   return(
     <div className="layer3">
-<div className='main-layer'>
+{Loaded ? 
+(
+  <div className='main-layer'>
   <div className='main main-span-col'>Benzinga</div>
 {ben.map((bens,i) =>(  
   <a  href={bens.attributes.ben.link}>
@@ -36,6 +45,14 @@ function Index() {
 
 
 </div>
+)
+:
+(
+  <h1>Loading</h1>
+)
+}
+
+
 
     </div>
 

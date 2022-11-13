@@ -3,7 +3,7 @@ import Layer5 from './layer5/index'
 import Layer4 from './layer4/index'
 import Layer3 from './layer3/index'
 import Capa from './capa/index'
-import Tech from './tech/index'
+import Layer2 from './layer2/index'
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
       <header >
         
 <Capa/>
-<Tech/>
+<Layer2/>
 <Layer3/>
 <Layer4/>
 <Layer5/>
