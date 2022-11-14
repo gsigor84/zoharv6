@@ -49,7 +49,7 @@ const defaultOptions = {
 <>
   <div className='tech-layer'>
   <div className='tech-main tech-span-col'>
-India<span className='shadow'>Trend</span>
+In<span className='shadow'>Trend</span>
   </div>
 {inTrends.slice(-5).map((inTrend,i) =>(  
   <> 
@@ -79,7 +79,7 @@ inTrend.attributes.in1.title.length >70 ?
 
 <div className='tech-layer2'>
   <div className='tech-main tech-span-col2'>
-India<span className='shadow'>Tehc</span>
+In<span className='shadow'>Tehc</span>
   </div>
 {inTech.slice(-5).map((inTechs,i) =>(  
   <> 

@@ -34,7 +34,7 @@
 @media only screen and (max-width: 600px) {
 
   .capa{
-    padding-block: 1vh;
+    padding-block: 4vh;
     background-color: #4285F4;
     
   }
@@ -52,6 +52,7 @@
   height: 4vh;
   color:white;
   font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
 }
 
 .capa-main{
