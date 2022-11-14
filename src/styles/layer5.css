@@ -51,7 +51,7 @@
       .crypto-layer{
         display: grid;
         padding-block: 1rem;
-        grid-template-columns:   1fr 1fr 1fr  ;
+        grid-template-columns:   1fr   ;
        gap:2rem;
         
       }
@@ -63,4 +63,27 @@
         color:#FBBC04;
         font-family: 'Source Sans 3', sans-serif;
       }
+
+      .crypto-a{
+    
+        font-size: 4.5vw; 
+        font-weight: 600;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 6vw;
+        color:white;
+      }
+
+      .crypto-span-col{
+
+        grid-column: 1;   
+        text-align: center;
+        height: 10vh;
+        font-weight: 500;
+        font-size: 14vw;
+        
+           color:#FBBC04;
+           font-family: 'Source Sans 3', sans-serif;
+           
+         }
   }
+
