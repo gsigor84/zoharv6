@@ -92,7 +92,7 @@
         display: grid;
         gap: 1rem;
         grid-template-columns:  1fr ;
-        
+        padding-inline:4vw ;
       }
 
       .tech-main{
