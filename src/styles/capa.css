@@ -48,7 +48,7 @@
 .capa-span-col{
   background-color: #4285F4;
  padding-top:10px;
-  font-size: 8vw;
+  font-size: 14vw;
   height: 4vh;
   color:white;
   font-family: 'Source Sans 3', sans-serif;
@@ -57,9 +57,9 @@
 .capa-main{
   line-height: 6vw;
   background-color: #57CBFF;
-  height: 12vh;
+  height: 10vh;
   color:white;
-  font-size: 4vw; 
+  font-size: 4.2vw; 
   padding: 0.5rem; 
   font-weight: 600;
   font-family: 'Source Sans 3', sans-serif;
