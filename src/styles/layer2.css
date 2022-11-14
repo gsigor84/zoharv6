@@ -91,21 +91,22 @@
       .tech-layer{
         display: grid;
         gap: 1rem;
-        grid-template-columns:  0.5fr 1fr 0.5fr 1fr ;
+        grid-template-columns:  1fr ;
+        
       }
 
       .tech-main{
         line-height: 1.5vw;
-        width: 20vw;
+        width: 100%;
         color:white;
         font-family: 'Source Sans 3', sans-serif;
         padding: 0;
       }
       .in-a{
         color: white;
-        font-weight: 400;
-        font-size: 2.2vw; 
-        line-height: 3.5vw;
+        font-weight: 600;
+        font-size: 4vw; 
+        line-height: 6vw;
         font-family: 'Open Sans', sans-serif;
       }
       .trend-back{
