@@ -19,7 +19,7 @@
     padding:1rem ;
     background-color:#FFD527;
     color:#FBBC04;
-    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
 
   .crypto-span-col{
@@ -29,7 +29,7 @@
     font-weight: 500;
     font-size: 6vw;
     color:#FBBC04;
-    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Roboto', sans-serif;
     
   }
 
@@ -37,7 +37,7 @@
     
     font-weight: 500;
     font-size:1.8vw; 
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 2.5vw;
     color:white;
   }
@@ -61,14 +61,14 @@
         padding:1rem ;
         background-color:#FFD527;
         color:#FBBC04;
-        font-family: 'Source Sans 3', sans-serif;
+        font-family: 'Roboto', sans-serif;
       }
 
       .crypto-a{
     
         font-size: 4.5vw; 
         font-weight: 600;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
         line-height: 6vw;
         color:white;
       }
@@ -82,7 +82,7 @@
         font-size: 14vw;
         
            color:#FBBC04;
-           font-family: 'Source Sans 3', sans-serif;
+           font-family: 'Roboto', sans-serif;
            
          }
   }

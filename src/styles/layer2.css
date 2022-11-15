@@ -16,7 +16,7 @@
     padding: 2rem;
     height: 60%;
     color:white;
-    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Roboto', sans-serif;
     
   }
 
@@ -26,7 +26,7 @@
     font-weight: 500;
     font-size: 6vw;
     color: #696969 ;
-    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #434343;
   }
   .trend-back{
@@ -42,13 +42,14 @@
     color: white;
     font-weight: 400;
     font-size: 1.2vw;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   .in-a2{
     color: white;
     font-weight: 400;
-    font-size: 2vw; 
-    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5vw; 
+    font-family: 'Roboto', sans-serif;
+    line-height: 2.5vw;
   }
   .shadow{
     color: #8f8f8f ;
@@ -60,6 +61,7 @@
     grid-template-columns:  1fr 1fr 1fr  ;
    padding-top: 6rem;
     padding-inline:2vw ;
+    
   }
   .tech-span-col2{
     grid-column-end: 4;
@@ -67,7 +69,7 @@
     font-weight: 500;
     font-size: 6vw;
     color: #696969 ;
-    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #434343;
   }
   .tech-main2{
@@ -77,7 +79,7 @@
     gap: 2rem;
     padding: 1rem; 
     color:white;
-    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Roboto', sans-serif;
     
   }
 
@@ -107,7 +109,7 @@
         font-weight: 600;
         font-size: 4vw; 
         line-height: 6vw;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
       }
       .trend-back{
         justify-content: right;
@@ -123,15 +125,16 @@
         padding-top: 6vh;
         padding-inline:4vw ;
         text-align: left;
+       
       }
       .tech-main2{
         background-color: #b5b5b5 ;
         line-height: 2.5vw;
-        height: 10vh;
+        height: 20vh;
         gap: 2rem;
         padding: 0.5rem; 
         color:white;
-        font-family: 'Source Sans 3', sans-serif;
+        font-family: 'Roboto', sans-serif;
         
       }
 
@@ -141,7 +144,7 @@
         font-size: 14vw;
         height: 4vh;
         color: #696969 ;
-        font-family: 'Source Sans 3', sans-serif;
+        font-family: 'Roboto', sans-serif;
         background-color: #434343;
       }
 
@@ -153,7 +156,7 @@
         font-weight: 500;
         font-size: 14vw;
         color: #696969 ;
-        font-family: 'Source Sans 3', sans-serif;
+        font-family: 'Roboto', sans-serif;
         background-color: #434343;
       }
 
@@ -165,14 +168,14 @@
        padding:2vh ;
         vertical-align: middle;
         color:white;
-        font-family: 'Source Sans 3', sans-serif;
+        font-family: 'Roboto', sans-serif;
         
       }
       .in-a2{
         line-height: 6vw;
         color: white;
         font-size: 4.5vw; 
-        
+        font-family: 'Roboto', sans-serif;
         font-weight: 600;
         font-family: 'Open Sans', sans-serif;
       }

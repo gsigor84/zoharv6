@@ -15,11 +15,11 @@
   background-color: #4285F4;
  padding-top:10px;
   
-  font-size: 8vw;
-  height: 4vh;
+  font-size: 6vw;
+  
   color:white;
-  font-family: 'Source Sans 3', sans-serif;
-  height: 12vh;
+  font-family: 'Roboto', sans-serif;
+  height: 10vh;
 }
 
 .capa-main{
@@ -29,6 +29,7 @@
   color:white;
   font-size: 2.5vw; 
   padding: 1rem; 
+  font-family: 'Roboto', sans-serif;
   
 }
 @media only screen and (max-width: 600px) {
@@ -51,7 +52,7 @@
   font-size: 14vw;
   height: 4vh;
   color:white;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
 
@@ -63,7 +64,7 @@
   font-size: 4.2vw; 
   padding: 0.5rem; 
   font-weight: 600;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 

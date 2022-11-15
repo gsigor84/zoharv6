@@ -13,22 +13,27 @@
     padding-inline:4vw ;
   }
 
-  .tech-main{
+  .crypto-main{
     line-height: 2.5vw;
-    width: 80%;
-    padding: 2rem;
-    height: 60%;
+    height: 20vh;
     color:white;
-    font-family: 'Source Sans 3', sans-serif;
+    font-size: 2.5vw; 
+    padding: 1rem; 
+    font-family: 'Roboto', sans-serif;
     
   }
+  .crypto-a{
+    line-height: 2.5vw;
+  
+    color:white;
+    font-size: 2.5vw; 
+  }
 
-  .tech-span-col{
-    grid-column: span 2;
+  .crypto-span-col{
+    
     text-align: center;
     font-weight: 500;
     font-size: 6vw;
-    color: #696969 ;
-    font-family: 'Source Sans 3', sans-serif;
-    background-color: #434343;
+    font-family: 'Roboto', sans-serif;
+    
   }
