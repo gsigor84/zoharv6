@@ -46,7 +46,7 @@ const defaultOptions = {
 
  
         <div className='date'>
-        13 Nov 2021
+        {bits.attributes.bit1.date}
         </div>
         <a href={bits.attributes.bit1.link} style={{color:'#012623'}}>
         <div className='text'>

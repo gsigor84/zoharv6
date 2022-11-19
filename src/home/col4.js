@@ -47,7 +47,7 @@ const defaultOptions = {
 
  
         <div className='date'>
-        13 Nov 2021
+        {uktrends.attributes.uk1.date}
         </div>
         <a href={uktrends.attributes.uk1.link}>
         <div className='text'>

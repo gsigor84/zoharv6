@@ -50,9 +50,9 @@ return(
 
  
         <div className='date'>
-        13 Nov 2021
+        {inTrend.attributes.in1.date}
         </div>
-        <a href={inTrend.attributes.in1.link}>
+        <a href={inTrend.attributes.in1.date}>
         <div className='text'>
         {
     inTrend.attributes.in1.title.length >70 ?
