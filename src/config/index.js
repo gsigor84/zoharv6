@@ -1,1 +1,1 @@
-export  const API_URL = 'https://hidden-cove-40858.herokuapp.com'
+export  const API_URL = 'https://labj7yqa.directus.app/items'

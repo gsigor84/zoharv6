@@ -7,25 +7,25 @@ import Lottie from 'react-lottie';
 function Col4() {
 
   const [Loaded, setLoaded] = useState(false)
-  const [ukTrends,setUkTrends]=useState([])
+  const [bit,setBit]=useState([])
 
-  const url = `${API_URL}/api/uktrends?populate=%2A`
+  const url = `${API_URL}/crypto`
 
   useEffect(() => {
     async function fetchMyAPI() {
         let res = await fetch(url)
         res = await res.json()
-        setUkTrends(res.data)
-       
+        setBit(res.data)
+        console.log(res.data)
     
   }
   
-
-  Promise.all(ukTrends)
+  Promise.all(bit)
   fetchMyAPI().then(() => setLoaded(true))
   .catch(err => console.log("Failed to load images", err))
 
 },[])
+
 
 const defaultOptions = {
   loop: true,
@@ -34,30 +34,42 @@ const defaultOptions = {
   renderer: 'svg'
 }
 
-
   return(
     <>
-    {ukTrends.slice(-7).map((uktrends,i) =>(
-   <div className='box' key={i}>
+     {bit.slice(-5).map((bits,i) =>(
+    <div className='box' key={i}>
 
       <dix className='conteudo4'>
 
       
        <div className='in-row'>
 
- 
-        <div className='date'>
-        {uktrends.attributes.uk1.date}
-        </div>
-        <a href={uktrends.attributes.uk1.link}>
+       <div className='top-grid'>
+
+<div className='top-cell' style={{color:'#012623'}}>
+  <div className='radios'>
+  Crypto Trend
+  </div>
+</div>
+
+<div className='top-cell-date'>
+   <div className='date'>
+      {bits.date}
+      </div>
+  </div>
+
+</div>
+
+
+        <a href={bits.link}>
         <div className='text'>
         {
-    uktrends.attributes.uk1.title.length >70 ?
-    `${uktrends.attributes.uk1.title.substring(0, 70)}...`  :uktrends.attributes.uk1.title
+    bits.title.length >70 ?
+    `${bits.title.substring(0, 70)}...`  :bits.title
     }
         </div>
-       </a>
-
+       
+</a>
 
        </div>
      
@@ -66,7 +78,9 @@ const defaultOptions = {
     </div>
     ))}
     </>
+    
   )
 
 }
+
 export default Col4;

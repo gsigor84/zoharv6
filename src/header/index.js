@@ -19,7 +19,7 @@ function Header() {
       <div className='cell'>
         <div className='inner'>
           <div className='menu'>
-          USATrends
+          USA
           </div>
 <div className='barra1'>
 
@@ -33,7 +33,7 @@ function Header() {
       <div className='cell'>
       <div className='inner'>
           <div className='menu'>
-          AsiaTrends
+          Asia
           </div>
 <div className='barra2'>
 
@@ -44,7 +44,7 @@ function Header() {
       <div className='cell'>
       <div className='inner'>
           <div className='menu'>
-          MarketTrends
+          UK
           </div>
 <div className='barra3'>
 
@@ -55,7 +55,7 @@ function Header() {
       <div className='cell'>
       <div className='inner'>
           <div className='menu'>
-          UKTrends
+          Crypto
           </div>
 <div className='barra4'>
 
@@ -63,17 +63,6 @@ function Header() {
         </div>
       </div>
    
-      <div className='cell'>
-      <div className='inner'>
-          <div className='menu'>
-          CryptoTrends
-          </div>
-<div className='barra5'>
-
-</div>
-        </div>
-
-      </div>
 
       
       <div className='cell'>

@@ -6,45 +6,66 @@ import Lottie from 'react-lottie';
 
 function Col3() {
 
-  const [ben,setBen]=useState([])
   const [Loaded, setLoaded] = useState(false)
+  const [ukTrend,setukTrend]=useState([])
 
-  const url = `${API_URL}/api/benzinas?populate=%2A`
+  const url = `${API_URL}/uktrend`
 
   useEffect(() => {
     async function fetchMyAPI() {
         let res = await fetch(url)
         res = await res.json()
-        setBen(res.data)
+        setukTrend(res.data)
+       
+    
   }
   
 
-  
-  Promise.all(ben)
+  Promise.all(ukTrend)
   fetchMyAPI().then(() => setLoaded(true))
   .catch(err => console.log("Failed to load images", err))
 
 },[])
 
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  renderer: 'svg'
+}
+
+
   return(
     <>
-    {ben.slice(-7).map((bens,i) =>(
-    <div className='box' key={i}>
+    {ukTrend.slice(-5).map((ukTrends,i) =>(
+   <div className='box' key={i}>
 
       <dix className='conteudo3'>
 
       
        <div className='in-row'>
 
- 
-        <div className='date'>
-        {bens.attributes.ben.date}
-        </div>
-        <a href={bens.attributes.ben.link}>
+       <div className='top-grid'>
+
+<div className='top-cell' style={{color:'#012623'}}>
+  <div className='radios'>
+  UK Trend
+  </div>
+</div>
+
+<div className='top-cell-date'>
+   <div className='date'>
+      {ukTrends.date}
+      </div>
+  </div>
+
+</div>
+
+        <a href={ukTrends.link}>
         <div className='text'>
         {
-    bens.attributes.ben.title.length >70 ?
-    `${bens.attributes.ben.title.substring(0, 70)}...`  :bens.attributes.ben.title
+    ukTrends.title.length >70 ?
+    `${ukTrends.title.substring(0, 70)}...`  :ukTrends.title
     }
         </div>
        </a>

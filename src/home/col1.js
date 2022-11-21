@@ -6,21 +6,21 @@ import Lottie from 'react-lottie';
 
 function Col1() {
 
-  const [un1,setUn1]=useState([])
+  const [usaTrend,setusaTrend]=useState([])
   const [Loaded, setLoaded] = useState(false)
 
 
-  const url2 = `${API_URL}/api/un1news?populate=%2A`
+  const url2 = `${API_URL}/usatrend`
   useEffect(() => {
     async function fetchMyAPI() {
 
     let res2 = await fetch(url2)
     res2 = await res2.json()
-    setUn1(res2.data)
+    setusaTrend(res2.data)
     
   }
   
-  Promise.all(un1)
+  Promise.all(usaTrend)
   
   fetchMyAPI().then(() =>setLoaded(true))
   .catch(err => console.log("Failed to load images", err))
@@ -35,24 +35,36 @@ const defaultOptions = {
 
   return(
 <>
-{un1.slice(-7).map((un1,i) =>(
+{usaTrend.slice(-4).map((usatrends,i) =>(
     <div className='box' key={i}>
 
       <dix className='conteudo'>
 
       
        <div className='in-row'>
+<div className='top-grid'>
 
- 
-        <div className='date'>
-        13 Nov 2021
+  <div className='top-cell' style={{color:'#012623'}}>
+    <div className='radios'>
+    USA Trend
+    </div>
+  </div>
+
+  <div className='top-cell-date'>
+     <div className='date'>
+        {usatrends.date}
         </div>
-<a href={un1.attributes.un1.link}>
+    </div>
+  
+</div>
+ 
+       
+<a href={usatrends.link}>
         <div className='text'>
           
         {
-    un1.attributes.un1.title.length >70 ?
-    `${un1.attributes.un1.title.substring(0, 70)}...`  :un1.attributes.un1.title
+    usatrends.title.length >70 ?
+    `${usatrends.title.substring(0, 70)}...`  :usatrends.title
     }
         </div>
        </a>

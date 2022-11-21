@@ -3,7 +3,6 @@ import Col1 from './col1'
 import Col2 from './col2'
 import Col3 from './col3'
 import Col4 from './col4'
-import Col5 from './col5'
 import Lottie from 'react-lottie';
 import animationData from '../back-ground.json'
 
@@ -35,7 +34,7 @@ function Index() {
    <Col2/>
    <Col3/>
    <Col4/>
-   <Col5/>
+
     </div>
   )
  

@@ -4,28 +4,29 @@ import { useEffect, useState} from 'react';
 import animationData from '../load.json'
 import Lottie from 'react-lottie';
 
-function Col4() {
+function Col3() {
+
 
   const [Loaded, setLoaded] = useState(false)
-  const [bit,setBit]=useState([])
+  const [ukTrends,setUkTrends]=useState([])
 
-  const url = `${API_URL}/api/bitcoins?populate=%2A`
+  const url = `${API_URL}/uktrend`
 
   useEffect(() => {
     async function fetchMyAPI() {
         let res = await fetch(url)
         res = await res.json()
-        setBit(res.data)
-        console.log(res.data)
+        setUkTrends(res.data)
+       
     
   }
   
-  Promise.all(bit)
+
+  Promise.all(ukTrends)
   fetchMyAPI().then(() => setLoaded(true))
   .catch(err => console.log("Failed to load images", err))
 
 },[])
-
 
 const defaultOptions = {
   loop: true,
@@ -34,29 +35,30 @@ const defaultOptions = {
   renderer: 'svg'
 }
 
+
   return(
     <>
-     {bit.slice(-7).map((bits,i) =>(
-    <div className='box' key={i}>
+    {ukTrends.slice(-5).map((uktrends,i) =>(
+   <div className='box' key={i}>
 
-      <dix className='conteudo5'>
+      <dix className='conteudo'>
 
       
        <div className='in-row'>
 
  
         <div className='date'>
-        {bits.attributes.bit1.date}
+        {uktrends.date}
         </div>
-        <a href={bits.attributes.bit1.link} style={{color:'#012623'}}>
+        <a href={uktrends.link}>
         <div className='text'>
         {
-    bits.attributes.bit1.title.length >70 ?
-    `${bits.attributes.bit1.title.substring(0, 70)}...`  :bits.attributes.bit1.title
+    uktrends.title.length >70 ?
+    `${uktrends.title.substring(0, 70)}...`  :uktrends.title
     }
         </div>
-       
-</a>
+       </a>
+
 
        </div>
      
@@ -65,9 +67,7 @@ const defaultOptions = {
     </div>
     ))}
     </>
-    
   )
 
 }
-
-export default Col4;
+export default Col3;
