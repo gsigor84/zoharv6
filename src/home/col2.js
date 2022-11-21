@@ -34,6 +34,10 @@ const defaultOptions = {
   renderer: 'svg'
 }
 return(
+
+  <>
+{Loaded ?
+(
   <>
 {inTrends.slice(-5).map((inTrend,i) =>(
     <div className='box' key={i}>
@@ -77,6 +81,14 @@ return(
     </div>
     ))}
 </>
+):
+<Lottie options={defaultOptions}
+height={400}
+width={400}/>
+}
+
+</>
+  
 )
 
 }

@@ -37,6 +37,9 @@ const defaultOptions = {
 
   return(
     <>
+{Loaded ?
+(
+    <>
     {ukTrend.slice(-5).map((ukTrends,i) =>(
    <div className='box' key={i}>
 
@@ -78,6 +81,16 @@ const defaultOptions = {
     </div>
     ))}
     </>
+    )
+    :
+
+    <Lottie options={defaultOptions}
+height={400}
+width={400}/>
+
+}
+
+</>
   )
 
 }

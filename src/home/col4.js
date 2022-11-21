@@ -36,6 +36,9 @@ const defaultOptions = {
 
   return(
     <>
+    {Loaded ?
+(
+  <>
      {bit.slice(-5).map((bits,i) =>(
     <div className='box' key={i}>
 
@@ -77,7 +80,15 @@ const defaultOptions = {
       
     </div>
     ))}
-    </>
+   
+    </> )
+    :
+
+    <Lottie options={defaultOptions}
+height={400}
+width={400}/>
+  }
+  </>
     
   )
 
