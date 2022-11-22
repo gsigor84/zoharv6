@@ -39,7 +39,7 @@ const defaultOptions = {
 (
   <>
   
-{usaTrend.slice(-4).map((usatrends,i) =>(
+{usaTrend.slice(0,-12).map((usatrends,i) =>(
     <div className='box' key={i}>
 
       <dix className='conteudo'>
