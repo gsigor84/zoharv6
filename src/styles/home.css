@@ -5,7 +5,12 @@
   gap: 1vw;
   padding:2rem;
 }
-
+.logo-img{
+  width:10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .box-logo {
   text-align: center;
   font-size: 3vw;
@@ -107,7 +112,7 @@ grid-auto-rows: 1fr 10fr;
 
 .svg{
   right: 39%;
-  top: 13%;
+  top: 11%;
   position: absolute;
   height: 20%;
   width: 100%;
@@ -271,6 +276,12 @@ border-radius: 12px;
     width: 18vw;
     background-color: white;
     border-radius: 12px;
+    }
+    .logo-img{
+      width:42vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
 }

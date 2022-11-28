@@ -5,6 +5,7 @@ import Col3 from './col3'
 import Col4 from './col4'
 import Lottie from 'react-lottie';
 import animationData from '../back-ground.json'
+import logo from '../zohar-logo.png';
 
 
 function Index() {
@@ -20,7 +21,8 @@ function Index() {
   return(
     <div className='grid-col'>
     <div className='box-logo' >
-      ZOHAR
+    <img src={logo} alt="Logo" className='logo-img'/>
+      
       <div className='svg'> 
       <Lottie 
    
