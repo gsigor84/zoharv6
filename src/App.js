@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 
 function App() {
   useEffect(() => {
-    document.title = "About Page";  
+    document.title = "ZOHAR";  
   }, []);
 
 
