@@ -6,6 +6,7 @@ import animationData from '../load.json'
 import Lottie from 'react-lottie';
 
 
+
 function Header() {
 
 

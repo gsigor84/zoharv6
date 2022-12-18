@@ -1,18 +1,18 @@
 import Home from './home/index'
 import Header from './header';
-
-const TITLE = 'ZOHAR';
-
+import React, { useEffect, useState } from "react";
 
 function App() {
-
+  useEffect(() => {
+    document.title = "About Page";  
+  }, []);
 
 
   return (
     <div className="App">
       <header >
      
-          <title>{ TITLE }</title>
+         
         <Header/>
       
 <Home/>
