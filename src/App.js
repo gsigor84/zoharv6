@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from 'react';
 import Home from './home/index'
 import Header from './header';
+
+const TITLE = 'ZOHAR';
+
 
 function App() {
 
@@ -9,7 +11,10 @@ function App() {
   return (
     <div className="App">
       <header >
+     
+          <title>{ TITLE }</title>
         <Header/>
+      
 <Home/>
 
       </header>
