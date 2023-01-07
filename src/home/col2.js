@@ -39,7 +39,7 @@ return(
 {Loaded ?
 (
   <>
-{inTrends.slice(0,-12).map((inTrend,i) =>(
+{inTrends.map((inTrend,i) =>(
     <div className='box' key={i}>
 
       <dix className='conteudo2'>

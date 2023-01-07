@@ -16,7 +16,7 @@ function Col4() {
         let res = await fetch(url)
         res = await res.json()
         setBit(res.data)
-        console.log(res.data)
+        
     
   }
   

@@ -13,15 +13,14 @@ function Col1() {
   const url2 = `${API_URL}/usatrend`
   useEffect(() => {
     async function fetchMyAPI() {
-
     let res2 = await fetch(url2)
     res2 = await res2.json()
     setusaTrend(res2.data)
+    console.log(res2.data)
     
   }
   
   Promise.all(usaTrend)
-  
   fetchMyAPI().then(() =>setLoaded(true))
   .catch(err => console.log("Failed to load images", err))
 }, [])
@@ -39,7 +38,7 @@ const defaultOptions = {
 (
   <>
   
-{usaTrend.slice(0,-12).map((usatrends,i) =>(
+{usaTrend.map((usatrends,i) =>(
     <div className='box' key={i}>
 
       <dix className='conteudo'>

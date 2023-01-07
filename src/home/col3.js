@@ -40,7 +40,7 @@ const defaultOptions = {
 {Loaded ?
 (
     <>
-    {ukTrend.slice(0,-13).map((ukTrends,i) =>(
+    {ukTrend.map((ukTrends,i) =>(
    <div className='box' key={i}>
 
       <dix className='conteudo3'>
