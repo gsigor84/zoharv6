@@ -39,7 +39,7 @@ const defaultOptions = {
     {Loaded ?
 (
   <>
-     {bit.slice(0,-10).map((bits,i) =>(
+     {bit.map((bits,i) =>(
     <div className='box' key={i}>
 
       <dix className='conteudo4'>
